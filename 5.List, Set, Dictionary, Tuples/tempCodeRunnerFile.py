@@ -1,1 +1,0 @@
-print(numbers_tuple[3])
