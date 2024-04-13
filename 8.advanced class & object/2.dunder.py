@@ -2,7 +2,7 @@
 # majic method
 # special method
 """ add your own operator and majic method """
-from typing import Any
+from typing import Any, SupportsIndex
 
 
 class Person:
@@ -26,18 +26,22 @@ class Person:
     
     def __len__(self):
         return self.height
+    def __repr__(self):
+        return f'Name:{self.name}, Age:{self.age}'
+        pass
     
        
 
 alim=Person('Alim',17,500,40)
 dalim=Person('Dalim',17,300)
-print(alim+dalim)
+# print(alim+dalim)
 
-x=3
-print(type(alim))
-alim()
-alim.__call__()
+# x=3
+# print(type(alim))
+# alim()
+# alim.__call__()
 
-print('compare two objects:', alim==dalim)
-print(len(alim))
+# print('compare two objects:', alim==dalim)
+# print(len(alim))
+print(dalim)
         
