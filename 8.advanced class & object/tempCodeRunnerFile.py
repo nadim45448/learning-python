@@ -1,1 +1,0 @@
-number=get_number(4,5,3,2)

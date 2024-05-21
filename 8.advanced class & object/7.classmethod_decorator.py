@@ -15,7 +15,7 @@ class Shoping:
         self.items.append(item)
         item_total=price*quantity
         # self.total+=item_total
-        self.add_to_cart(item_total)
+        self.add_to_total(item_total)
     
     def add_to_total(self, amount):
         self.total+=amount
