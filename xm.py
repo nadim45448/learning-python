@@ -1,37 +1,17 @@
-# s="Programming Hero is the best"
-# op=""
-# res=""
-# for word in s:
-#     if ' ' not in word:
-#         op=word+op #rp
-#     else:
-#         res+=op+' '
-#         print(res)
-#         op=''
-    
-    
-    
+import math
 
-def abc(func):
-    def inner():
-        print(" start inner function")
-        func()
-        print("end of inner function")
+class Distance:
+    def __init__(self, x1, y1, x2, y2):
+        self.x1 = x1
+        self.y1 = y1
+        self.x2 = x2
+        self.y2 = y2
 
-    return inner
-    
-    
-    pass
-@abc
-def deco():
-    print("decorator")
-
-deco()
+    def compute_distance(self):
+        return math.sqrt((self.x2 - self.x1) ** 2 + (self.y2 - self.y1) ** 2)
 
 
-
-
-
-
-
-
+x1, y1 = 0, 0
+x2, y2 = 3, 4
+distance = Distance(x1, y1, x2, y2)
+print(f"The distance between the points is: {distance.compute_distance()}")  
