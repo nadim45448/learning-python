@@ -1,3 +1,5 @@
+# parent class, base class, super class
+# child class, sub class, derived class
 # base class will have only the common attributes and methods
 #  Device class is the base class
 class Device:
@@ -35,6 +37,9 @@ hp.re_sale()
 
 
 print(hp.brand)
+
+print(issubclass(Device, Laptop))
+print(issubclass(Laptop, Device))
 
 
    
