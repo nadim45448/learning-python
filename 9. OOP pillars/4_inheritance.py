@@ -2,6 +2,8 @@
 # child class, sub class, derived class
 # base class will have only the common attributes and methods
 #  Device class is the base class
+# DRY -> Do not repeat yourself
+
 class Device:
     def __init__(self, brand, price, color) -> None:
         self.brand=brand
